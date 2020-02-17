@@ -1,0 +1,34 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-02-10 19:03:36
+ * @LastEditTime : 2020-02-10 19:14:55
+ * @LastEditors  : Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \vue-study\vue_study\src\kvue\index.html
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script src="./kvue.js"></script>
+    <script>
+    const app = new KVue({
+        data:{
+            test:'I am test',
+            foo:{
+                bar:'bar'
+            }
+        }
+    })
+    // app.$data.test = "hello,kaikeba!"
+    // app.$data.foo.bar = "on my bar"
+    app.test = "hello,kaikeba!"
+    app.foo.bar = "on my bar"
+    </script>
+</body>
+</html>
